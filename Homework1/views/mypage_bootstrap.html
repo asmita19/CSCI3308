@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <title >About Me</title>
+  </head>
+  <body>
+  		<div class="container-fluid">
+			<h1 style="font-family:verdana"> Asmita Dhakal</h1>
+			<p class = "card bg-light" style="font-family:verdana">Hello, I am senior Computer Science student at University of Colorado Boulder. I was born and raised in Nepal and I moved to the states at the age of 10. I enjoy learning on how computers are able to do so much in seconds while it may take humans hours to do, which is why I am studying Computer Science. </p>
+			<!-- My Professional Profile-->
+			<h2 style="font-family:verdana">My Professional Profile</h2>
+			<a href="https://github.com/asmita19" class="btn btn-warning">Asmita's Github</a>
+			<br><img src="Asmita.jpg" class="rounded-circle" alt="Asmita Dhakal" width="400" height="530">
+
+			<!--My Favorite Project-->
+			<h3 style="font-family:verdana">My favorite Projects:</h3>
+			<table class = "table table">
+				<tr>
+					<th style="text-align:left;">#</th>
+					<th style="text-align:left;">Name of Projects</th>
+					<th style="font-family:verdana">Technologies Used</th>
+				</tr>
+				<tr>
+					<th style="text-align:left;">1.</th>
+					<td style="font-family:verdana">Reminder application</td>
+					<td style="font-family:verdana">C++</td>
+				</tr>
+				<tr>
+					<th style="text-align:left;">2.</th>
+					<td style="font-family:verdana">Smart Shelf</td>
+					<td style="font-family:verdana">Adobe XD</td>
+				</tr>
+				<tr>
+					<th style="text-align:left;">3.</th>
+					<td style="font-family:verdana">Complexion Finder</td>
+					<td style="font-family:verdana">C++</td>
+				</tr>
+			</table>
+
+			<!--Countries Traveled-->
+			 <div class = "row">
+                <div class = "col-5">
+                    <div id = "country">
+                        <div class = "card">
+                            <div class = "card-header">
+                                <a class = "card-link" data-toggle = "collapse" href = "#countryList" style="font-family:verdana">
+                                    Countries Travelled
+                                </a>
+                            </div>
+                            <div id = "countryList" class = "collapse multi-collapse" data-parent = "#country">
+                                <div class = "card-body">
+                                    <table class = "table">
+                                       <tr><td style="font-family:verdana">1. Nepal</tr></td>
+										<tr><td style="font-family:verdana">2. USA</tr></td>
+										<tr><td style="font-family:verdana">3. Thailand</tr></td>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Interests-->
+                <div class = "col-5">
+                    <div id = "interests">
+                        <div class = "card">
+                            <div class = "card-header">
+                                <a class = "card-link" data-toggle = "collapse" href = "#interstsList">
+                                    Interests
+                                </a>
+                            </div>
+                            <div id = "interstsList" class = "collapse multi-collapse" data-parent = "#interests">
+                                <div class = "card-body">
+                                    <table class = "table">
+                                        <tr><td style="font-family:verdana">Reseaching</tr></td>
+										<tr><td style="font-family:verdana">Editing</tr></td>
+										<tr><td style="font-family:verdana">Swimming</tr></td>
+										<tr><td style="font-family:verdana">Exploring</tr></td>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+			<!--Button trigger modal-->
+			<br>
+			<button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+              My Fun Activities
+          	</button>
+
+			<!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel" style="font-family:verdana">My Fun Activities</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body" style="font-family:verdana">
+                         Once a week I escape from reality by venturing to a new place. 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>	
+	</body>
+</html>
+<!-- -->

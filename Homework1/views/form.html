@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+</style>
+    <head>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <title>Form</title>
+    </head>
+
+    <body>
+        <div class = "container" style="font-family: TimesNewRoman">
+            <h1>Add New Article</h1>
+            <br>
+            <form>
+
+            <!-- article title -->
+            <div class="form-group">
+                <h3>Article Title</h3>
+                <input type="text" class="form-control" id="article" placeholder="Title">
+            </div>
+
+            <!-- author name -->
+            <div class="form-group">
+                <h3>Author Name</h3>
+                <input type="text" class="form-control" id="article" placeholder="Name">
+            </div>
+
+            <div class = "row">
+
+                <!--upload file -->
+                <div class = "col">
+                    <h3>Upload Files:</h3>
+                    <input type="file" id="myFile" name="filename2">
+                </div>
+
+                <!-- Pages -->
+                <div class = "col">
+                    <h3>Pages</h3>
+                    <select class="form-control" id="page">
+                        <option>Academics</option>
+                        <option>Year</option>
+                        <option>Major</option>
+                        <option>Career</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--article text-->
+            <div class="form-group">
+                <h3>Article Text</h3>
+                <textarea class="form-control" id="articleText" rows = "12" placeholder = "Enter text here"></textarea>
+            </div>
+
+            <!-- Select Tags and Visibility -->
+            <div class = "row">
+                <div class = "col-5">
+                    <h3>Select Tags</h3>
+                </div>
+                <div class = "col-5">
+                    <h3>Visibility</h3>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col-1">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="phthon">
+                        <label class="form-check-label" for="exampleCheck1">Python</label>
+                    </div>
+                </div>
+                <div class = "col-1">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="c++">
+                        <label class="form-check-label" for="exampleCheck1">C++</label>
+                    </div>
+                </div>
+                <div class = "col-1">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="java">
+                        <label class="form-check-label" for="exampleCheck1">Java</label>
+                    </div>
+                </div>
+                <div class = "col-1">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="scala">
+                        <label class="form-check-label" for="exampleCheck1">Scala</label>
+                    </div>
+                </div>
+                <div class = "col-1">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="perl">
+                        <label class="form-check-label" for="exampleCheck1">Perl</label>
+                    </div>
+                </div>
+                <div class = "col">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-light active">
+                            <input type="radio" name="options" id="public" autocomplete="off" checked>
+                            Public
+                        </label>
+                        <label class="btn btn-light active">
+                            <input type="radio" name="options" id="private" autocomplete="off">
+                            Private
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login to finish submitting -->
+            <div class="form-group">
+                <h3>Login to Finish Submitting</h3>
+                <div class = "row">
+                    <!-- Username-->
+                    <div class = "col">
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <!-- password -->
+                    <div class = "col">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Button: remeber me -->
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+
+            <!-- Button submit -->
+            <br>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+    </body>
+
+</html>
